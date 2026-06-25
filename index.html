@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8f1212">
+  <title>KPI General Affair</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="brand-icon">GA</span><div><strong>KPI GENERAL AFFAIR</strong><small>Performance Dashboard</small></div></div>
+      <nav id="navigation">
+        <button class="nav-item active" data-page="dashboard"><span>▦</span> Dashboard</button>
+        <p>INPUT KPI</p>
+        <button class="nav-item" data-page="assets"><span>◫</span> Asset Management</button>
+        <button class="nav-item" data-page="facilities"><span>⌂</span> Facility Management</button>
+        <button class="nav-item" data-page="maintenance"><span>⚙</span> Maintenance</button>
+        <button class="nav-item" data-page="legality"><span>▤</span> Legalitas</button>
+        <button class="nav-item" data-page="budgets"><span>Rp</span> Budget Control</button>
+        <button class="nav-item" data-page="audits"><span>✓</span> Audit 5S</button>
+        <p>LAINNYA</p>
+        <button class="nav-item" data-page="trend"><span>↗</span> Tren Bulanan</button>
+        <button class="nav-item" id="backupButton"><span>⇩</span> Backup Data</button>
+        <button class="nav-item" id="restoreButton"><span>⇧</span> Pulihkan Backup</button>
+      </nav>
+      <div class="save-state" id="saveState"><i></i><span id="saveStateText">Data tersimpan otomatis</span></div>
+    </aside>
+
+    <main>
+      <header class="topbar">
+        <button class="menu-btn" id="menuButton" aria-label="Buka menu">☰</button>
+        <div class="period-fields">
+          <label>Nama SPPG<select id="sppgInput" aria-label="Nama SPPG"></select></label>
+          <label>Periode<input id="periodInput" type="month"></label>
+        </div>
+        <div class="user"><span>GA</span><div><strong>General Affair</strong><small>Pengelola KPI</small></div></div>
+      </header>
+
+      <section id="content"></section>
+    </main>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+  <input type="file" id="restoreInput" accept="application/json,.json" hidden>
+
+  <dialog id="entryDialog">
+    <form id="entryForm">
+      <div class="dialog-head"><div><small>INPUT DATA</small><h2 id="dialogTitle">Tambah Data</h2></div><button type="button" id="closeDialog" aria-label="Tutup">×</button></div>
+      <div class="form-grid" id="formFields"></div>
+      <div class="dialog-actions"><button type="button" class="btn secondary" id="cancelDialog">Batal</button><button type="submit" class="btn primary">Simpan Data</button></div>
+    </form>
+  </dialog>
+
+  <script src="cloud-config.js"></script>
+  <script src="cloud-store.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
