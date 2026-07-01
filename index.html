@@ -5,10 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#8f1212">
   <title>KPI General Affair</title>
-  <link rel="stylesheet" href="styles.css?v=20260701-status-donut">
+  <link rel="stylesheet" href="styles.css?v=20260701-login">
 </head>
 <body>
-  <div class="app" id="app">
+  <section class="login-screen" id="loginScreen">
+    <div class="login-card">
+      <div class="login-brand"><span>GA</span><div><strong>KPI GENERAL AFFAIR</strong><small>Performance Dashboard</small></div></div>
+      <div class="login-copy"><small>LOGIN DASHBOARD</small><h1>Masuk ke Dashboard</h1><p>Silakan masuk untuk mengelola data KPI General Affair.</p></div>
+      <form id="loginForm">
+        <p class="login-error" id="loginError" hidden>Username atau password tidak sesuai.</p>
+        <label>Username<input id="loginUsername" name="username" autocomplete="username" required></label>
+        <label>Password<input id="loginPassword" name="password" type="password" autocomplete="current-password" required></label>
+        <button class="btn primary login-submit" type="submit">Masuk</button>
+      </form>
+      <p class="login-help">Akun awal: username <strong>ga</strong> · password <strong>ga123</strong></p>
+    </div>
+  </section>
+
+  <div class="app is-locked" id="app">
     <aside class="sidebar" id="sidebar">
       <div class="brand"><span class="brand-icon">GA</span><div><strong>KPI GENERAL AFFAIR</strong><small>Performance Dashboard</small></div></div>
       <nav id="navigation">
@@ -35,7 +49,7 @@
           <label>Nama SPPG<select id="sppgInput" aria-label="Nama SPPG"></select></label>
           <label>Periode<input id="periodInput" type="month"></label>
         </div>
-        <div class="user"><span>GA</span><div><strong>General Affair</strong><small>Pengelola KPI</small></div></div>
+        <div class="user"><span>GA</span><div><strong>General Affair</strong><small>Pengelola KPI</small></div><button class="logout-btn" id="logoutButton" type="button">Logout</button></div>
       </header>
 
       <section id="content"></section>
@@ -54,6 +68,6 @@
 
   <script src="cloud-config.js"></script>
   <script src="cloud-store.js"></script>
-  <script src="script.js?v=20260701-status-donut"></script>
+  <script src="script.js?v=20260701-login"></script>
 </body>
 </html>
