@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#8f1212">
   <title>KPI General Affair</title>
-  <link rel="stylesheet" href="styles.css?v=20260701-login-bg">
+  <link rel="stylesheet" href="styles.css?v=20260707-barcode-popup">
 </head>
 <body>
   <section class="login-screen" id="loginScreen">
@@ -65,8 +65,16 @@
     </form>
   </dialog>
 
+  <dialog id="barcodeDialog" class="barcode-dialog">
+    <div class="barcode-preview">
+      <div class="dialog-head"><div><small>BARCODE ASSET</small><h2 id="barcodeTitle">Barcode Asset</h2></div><button type="button" id="closeBarcodeDialog" aria-label="Tutup">×</button></div>
+      <img id="barcodeLargeImage" alt="Barcode Asset">
+      <pre id="barcodePayload"></pre>
+    </div>
+  </dialog>
+
   <script src="cloud-config.js"></script>
   <script src="cloud-store.js"></script>
-  <script src="script.js?v=20260701-login-bg"></script>
+  <script src="script.js?v=20260707-barcode-popup"></script>
 </body>
 </html>
