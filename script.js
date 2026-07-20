@@ -1,5 +1,5 @@
 const monthNames=['Jan','Feb','Mar','Apr','Mei','Jun','Jul','Agu','Sep','Okt','Nov','Des'];
-const sppgNames=['Dadali','Lw. Liang 1','Lw. Liang 2','Lw. Liang 3','Cianjur 1','Cianjur 2','Cigudeg 1','Cigudeg 2','Jasinga 1','Jasinga 2','Pasir Angin 1','Cipayung','Cibogo','Tanjungsari 1','Tanjungsari 2','Klapanunggal 1','Klapanunggal 2','Rumpin 1','Rumpin 2','Tanjungkerta','Cigombong','Kuningan 1','Kuningan 2','Garut 1','Garut 2','Cimanggu','Cabang Bungin 1','Cabang Bungin 2'];
+const sppgNames=['Dadali','Lw. Liang 1','Lw. Liang 2','Lw. Liang 3','Cianjur 1','Cianjur 2','Cigudeg 1','Cigudeg 2','Jasinga 1','Jasinga 2','Pasir Angin 1','Cipayung','Cibogo','Tanjungsari 1','Tanjungsari 2','Klapanunggal 1','Klapanunggal 2','Rumpin 1','Rumpin 2','Tanjungkerta','Cigombong','Kuningan 1','Kuningan 2','Garut 1','Garut 2','Cimanggu','Cabang Bungin 1','Cabang Bungin 2','Head Office','Cijeruk'];
 const seed={
   meta:{sppg:'NAMA SPPG',period:'2026-06'},
   assets:[{assetNo:'AST-PURI-DDL-001',name:'Laptop Finance 01',purchaseDate:'2026-05-01',location:'HO Lt.2',pic:'Rina',status:'Sesuai',condition:'Baik'}],
