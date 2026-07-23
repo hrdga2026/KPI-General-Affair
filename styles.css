@@ -14,3 +14,4 @@
 .app.is-locked,.login-screen.is-hidden{display:none}.logout-btn{border:0;background:#f3e3e3;color:var(--brand);height:30px;border-radius:9px;padding:0 10px;font-size:10px;font-weight:800;cursor:pointer}.logout-btn:hover{background:#efd0d0}
 .module-actions{margin:-8px 0 14px;display:flex;gap:8px;flex-wrap:wrap}.module-actions .btn{height:36px}
 .btn.danger{background:#fde5e6;color:#b62e35}.btn.danger:hover{background:#fbd3d5}.select-cell{width:42px;text-align:center!important}.select-cell input{width:16px;height:16px;accent-color:var(--brand);cursor:pointer}
+.move-assets{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.move-assets select{height:36px;border:1px solid var(--line);border-radius:10px;padding:0 12px;min-width:180px;background:#fff;outline:none}
